@@ -4,7 +4,10 @@
  */
 package biblioteca;
 
-
+/**
+ * 
+ * crea un nuevo libro con su informacion
+ */
 public class Main {
 
     public static void main(String[] args) {
@@ -74,7 +77,7 @@ public class Main {
         this.prestados = prestados;
     }
 /**
- * 
+ * metodo prestar libros
  * @param cantidad
  * @return true si hay ejemplares para prestarte
  * @return false si no hay ejemplares para prestarte
@@ -89,8 +92,8 @@ public class Main {
     }
 
     /**
-     * 
-     * @param cantidad
+     * metodo devuelve libros 
+     * @param cantidad de libros 
      * @return true si puedo devolver algun libro
      * @return false si no puedo devolver ningun libro
      */
@@ -102,7 +105,10 @@ public class Main {
             return false;
         }
     }
-    
+    /**
+     * muestra las operaciones de libro1
+     * @param cantidad de libros que voy poner en cada metodo
+     */
 public void operativa_libro(int cantidad){
     
 
@@ -111,7 +117,9 @@ public void operativa_libro(int cantidad){
         libro1.devolver(1);
         libro1.mostrarEstado(); 
 }
-
+/**
+ * muestra el estado del titulo, autor, ejemplares y prestados
+ */
     public void mostrarEstado() {
         System.out.println("Título: " + titulo);
         System.out.println("Autor: " + autor);
